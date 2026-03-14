@@ -1,12 +1,17 @@
-import React from 'react'
 import Skill from './Skill'
+import { skillList } from '../data.js'
+
 function SkillList() {
     return (<>
         <div className="skill-list">
-            <Skill skill="React" emoji="⚛️" color="blue" />
-            <Skill skill="HTML+CSS" emoji="💪" color="orange" />
-            <Skill skill="JavaScript" emoji="☢️" color="yellow" />
-            <Skill skill="Figma" emoji="👶" color="purple" />
+            {skillList.map((skill, index) => (
+                <Skill
+                    key={index}
+                    skill={skill.skill}
+                    emoji={skill.emoji}
+                    color={skill.color}
+                />
+            ))}
         </div>
     </>)
 }
