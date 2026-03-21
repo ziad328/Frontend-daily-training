@@ -20,7 +20,7 @@ body {
   justify-content: space-between;
 }
 
-.numbers > div {
+.numbers>div {
   height: 40px;
   aspect-ratio: 1;
   background-color: #e7e7e7;
@@ -32,7 +32,7 @@ body {
 }
 
 .numbers .active {
-  background-color: #28ccbc;
+  background-color: #a312a8;
   color: #fff;
 }
 
@@ -62,7 +62,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #28ccbc;
+  background-color: #a312a8;
   color: #fff;
 }
 
